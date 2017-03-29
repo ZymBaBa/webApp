@@ -1,29 +1,26 @@
-<!DOCTYPE html>
-<html ng-app="myApp">
+<!doctype html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--核心CSS-->
+    <link href="css/dist/bootstrap.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/dist/animate.css">
+    <!--自定义CSS-->
+    <link href="css/app/MuYue.css" rel="stylesheet" media="all">
+    <style>
+        .div1{
+            display: block;
+            width: 1600px;
+            height: 200px;
+            background:url("img/banner.png") ;
+        }
+    </style>
 </head>
-<body ng-controller="firstCtrl">
-<div>
-  <a class="button" ui-sref="map">map</a>
-  <a class="button" ui-sref="music">music</a>
-  <a class="button" ui-sref="class">class</a>
-</div>
+<body>
+<div class="div1"></div>
 </body>
-<script type="text/ng-template" id="class.html">
-  nihao ajdfkd
-</script></s>
-<script>
-  var app = angular.module("myApp",[]);
-  app.config(function ($statProvider) {
-    $statProvider
-      .state("map",{
-        templateUrl:"html/map.html"
-      })
-      .state("music",{
-        templateUrl:"html/music.html"
-      })
-  }).controller("firstCtrl",function ($scope, $state) {
-    $state.go('music');
-  })
-</script>
 </html>

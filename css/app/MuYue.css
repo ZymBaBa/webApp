@@ -1,122 +1,157 @@
-html,body{
-  margin: 0;
-  padding: 0;
-  min-width: 1600px;
-  width: auto;
-}
-.backimg{
-  background-image: url("../../img/7.jpg");
-  background-repeat:inherit;
-  background-size:cover;
-  /*background-origin:border-box;*/
-  height: 900px;
-  z-index: -2;
-}
-.backImg1{
-  background-image: url("../../img/background2.jpg");
-  background-repeat:inherit;
-  background-size:cover;
-  /*background-origin:border-box;*/
-  height: 900px;
-  z-index: -2;
-}
-.row1{
-  margin: 0;
-}
-.bodyImg{
-  /*min-width: 1500px;*/
-  margin-top: 10px;
-}
-.bodyImg>img{
-  margin-right: -108px;
-  display: inline-block;
-  width:360px;
-  height:680px;
-}
-.col-lg-offset-1{
-  margin-left: 11.55%;
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 1600px;
+    width: auto;
+    height: auto;
 }
 
-.introduce{
-  margin-top: 20px;
-  color: #a8edff;
-  font-size: 18px;
+.backimg {
+    background-image: url("../../img/7.jpg");
+    background-repeat: inherit;
+    background-size: cover;
+    /*background-origin:border-box;*/
+    height: 900px;
+    z-index: -2;
 }
-.textColor{
-  color: #a8edff;
-  font-size: 18px;
+
+.backImg1 {
+    background-image: url("../../img/background2.jpg");
+    background-repeat: inherit;
+    background-size: cover;
+    height: 900px;
+    z-index: -2;
 }
-.moreBtn{
-  margin-top: 40px;
+
+.bodyImg {
+    /*min-width: 1500px;*/
+    margin-top: 10px;
 }
-.alt{
-  height: 192px;
-  bottom: 0;
-  left:0;
-  position: inherit;
-  background-color: rgba(0,0,0,.85);
-  clear: both;
-  margin-right: 0;
-  margin-left: 0;
+
+.bodyImg > img {
+    margin-right: -108px;
+    display: inline-block;
+    width: 360px;
+    height: 680px;
 }
-.alt>.row{
-  margin-left: 0;
-  margin-right: 0;
+
+.col-lg-offset-1 {
+    margin-left: 11.55%;
 }
-.footersize{
-  color: #959595;
-  font-size: 16px;
-  line-height: 30px;
-  list-style-type:none;
-  margin-top: 20px;
+
+.introduce {
+    margin-top: 20px;
+    color: #a8edff;
+    font-size: 18px;
 }
-.one{
-  color: #e8e8e8;
-  font-size: 20px;
-  text-decoration: underline;
-  height: 100px;
+
+.textColor {
+    color: #a8edff;
+    font-size: 18px;
 }
-.butAlt{
-  height: 72px;
-  bottom: 0;
-  left:0;
-  position: inherit;
-  background-color: #101010;
-  clear: both;
+
+.moreBtn {
+    margin-top: 40px;
 }
-footer{
-  margin-top: -192px;
+
+.alt {
+    height: 192px;
+    bottom: 0;
+    left: 0;
+    position: inherit;
+    background-color: rgba(0, 0, 0, .85);
+    clear: both;
+    margin-right: 0;
+    margin-left: 0;
 }
-.btnsize{
-  color: #959595;
-  font-size: 14px;
-  margin-top: 10px;
+
+.alt > .row {
+    margin-left: 0;
+    margin-right: 0;
 }
-.thread{
-  width: 1315px;
-  /*margin-left: 20px;*/
-  margin-top: -25px;
+
+.footersize {
+    color: #959595;
+    font-size: 16px;
+    line-height: 30px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.one {
+    color: #e8e8e8;
+    font-size: 20px;
+    text-decoration: underline;
+    height: 100px;
+}
+
+.butAlt {
+    height: 72px;
+    bottom: 0;
+    left: 0;
+    position: inherit;
+    background-color: #101010;
+    clear: both;
+}
+
+footer {
+    margin-top: -192px;
+}
+
+.btnsize {
+    color: #959595;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.thread {
+    width: 1315px;
+    /*margin-left: 20px;*/
+    margin-top: -25px;
 }
 
 
 
+/*详细页*/
+.secondBody {
+    background: url("../../img/background2.jpg") repeat-y;
+    background-size: cover;
+    width: 100%
+}
+.bannerImg {
+    background: url("../../img/banner.png") no-repeat;
+    width: 1600px;
+    height: 172px;
+    margin: 0 auto;
+}
 
-.secondBody{
-  background: url("../../img/background2.jpg") repeat-y;
-  background-size: cover;
+.textImg {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    margin-bottom: -6px;
 }
-.banner{
-  margin-left: -30px;
-  background: url("../../img/banner.png") no-repeat;
-  height:172px;
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
+
+.textIgmUl {
+    display: block;
+    margin: 0 auto;
+    width: 1600px;
 }
-.muLu{
-  margin-top: 97px;
-  text-align: -webkit-center;
-  /*min-width: 94px;*/
+
+.textIgmUl > li[liObj="second"] {
+    margin-left: 260px;
+    margin-right: 260px;
+    padding-left: 30px;
 }
-.beiimg{
-  background: url("../../img/te1.png") no-repeat;
+
+.contentDiv {
+    display: block;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.removePad {
+    padding-left: 0;
+    padding-right: 0;
 }
