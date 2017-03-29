@@ -1,0 +1,15 @@
+{
+  "name": "muyue",
+  "version": "1.0.0",
+  "description": "*Just-add-water CSS animation*",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "angular": "^1.5.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>睦月|代号红皇后</title>
+  <link rel="stylesheet" href="css/dist/animate.css">
+  <link href="css/dist/demo-page.css" rel="stylesheet" media="all">
+  <link href="css/dist/hover.css" rel="stylesheet" media="all">
+  <link href="css/dist/bootstrap.min.css" rel="stylesheet" media="all">
+  <link href="css/app/MuYue.css" rel="stylesheet" media="all">
+</head>
+<body ng-controller="secondCtrl" class="secondBody">
+<div class="container-fluid">
+  <nav class="navbar">
+    <div class="row">
+      <div class="col-lg-6 col-sm-6 col-xs-6">
+        <img src="img/logo.png">
+      </div>
+      <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+        <a>简体中文</a>
+        <a>繁体中文</a>
+        <a>English</a>
+      </div>
+    </div>
+    <div class="row" style="position: relative;">
+      <img src="img/banner.png" style="width: 100%;height: auto;min-width: 1600px;">
+      <div class="row" style="position: absolute;left:0;bottom: 14px;min-width: 1600px">
+        <div class="col-lg-12 text-center">
+          <ul class="list-inline">
+            <li><img src="img/gai0.png" style="margin-right:100px;margin-left: 390px"></li>
+            <li> <img src="img/one0.png" style="margin-left:200px;"></li>
+            <li> <img src="img/mu0.png" style="margin-left: 280px;"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="sidebar-collapse">
+    <ul side-navigation class="nav metismenu" id="side-menu">
+
+      <li ui-sref-active="">
+        <span ui-sref="#" class="nav-label beiimg"><img src="img/te1.png">特别推荐 </span>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <ul>
+        <li ngf-src="img/te1"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <button class="button btn-success btn-lg" ui-sref="map">map</button>
+      <button class="button btn-success btn-lg" ui-sref="music">music</button>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+      <ui-view></ui-view>
+    </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/dist/angular.js"></script>
+<script type="text/javascript" src="js/dist/angular-resource.js"></script>
+<script type="text/javascript" src="js/dist/angular-ui-router.js"></script>
+<script type="text/javascript" src="js/app/app.js"></script>
+<script type="text/javascript" src="js/app/config.js"></script>
+<script type="text/javascript" src="js/controller/secondCtrl.js"></script>
+<script type="text/javascript" src="js/controller/mapCtrl.js"></script>
+<script type="text/javascript" src="js/controller/musicCtrl.js"></script>
+</html>
+
+
+<!--<div class="">-->
+<!--<p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p>-->
+<!--</div>-->

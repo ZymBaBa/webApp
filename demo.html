@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .div1{
+      display: inline-block;
+      margin-left: 10px;
+      width: 150px;
+      height: 120px;
+      background: #10ac86;
+      color: #ffffff;
+      text-align: center;
+      line-height: 120px;
+    }
+    .mouseObj{
+      display: block;
+      margin: 10px 0 0 10px;
+      width: 1000px;
+      height: 100px;
+      background: #31b0d5;
+      border: 1px solid #ffffff;
+    }
+    .mouseRed{
+      display: block;
+      margin: 10px 0 0 10px;
+      width: 1000px;
+      height: 100px;
+      background: #d43f3a;
+      border: 1px solid #ffffff;
+    }
+    .mouseMove{
+      display: none;
+    }
+  </style>
+</head>
+<body ng-controller="firstCtrl">
+<!--<div ng-mousedown="mouseDown();">mouseDown</div>-->
+<!--<div ng-mousemove="mouseMove();">mouseMove</div>-->
+<!--<div ng-mouseover="mouseOver();">mouseOver</div>-->
+<!--<div ng-mouseup="mouseUp();">mouseUp</div>-->
+<div class="div1" ng-mouseenter="mouseEnter();" ng-mouseleave="mouseLeave();">移上出现/移开消失</div>
+<div class="mouseObj" ng-class="{true:mouseClass,false:modseClassS}[mouseObj]">
+
+</div>
+<!--<img ng-init="ngLink1='http://img5q.duitang.com/uploads/item/201506/23/20150623203928_HzBWU.jpeg'" ng-src="{{ngLink1}}" style="width: 500px;height: auto"  ng-mouseenter="mouseEnter();" ng-mouseleave="mouseLeave();">-->
+<!--<div class="mouseObj" ng-show="mouseObj==true" ng-hide="mouseObj==false">-->
+
+<!--</div>-->
+</body>
+<script type="text/javascript" src="js/dist/angular.min.js"></script>
+<script type="text/javascript" src="js/app/app.js"></script>
+<script>
+  var app=angular.module("app",[]);
+  app.controller('firstCtrl',function ($scope) {
+    $scope.mouseObj=true;
+    $scope.mouseDown=function () {
+      console.log('点击时')
+    };
+    $scope.mouseMove=function () {
+      console.log('保持')
+    };
+    $scope.mouseOver=function () {
+      console.log('移上')
+    };
+    $scope.mouseUp=function () {
+      console.log('点击后')
+    };
+    $scope.mouseEnter=function () {
+
+      $scope.mouseObj=true;
+      $scope.ngLink1='http://img5q.duitang.com/uploads/item/201506/23/20150623203928_HzBWU.jpeg';
+      $scope.mouseClass='mouseRed';
+      console.log('移上出现');
+      //显示对象Code
+    };
+    $scope.mouseLeave=function () {
+      $scope.mouseObj=false;
+      $scope.ngLink1='http://h8.86.cc/walls/20140923/mid_341e64a5463e0de.jpg';
+      console.log('移开消失');
+      $scope.modseClassS='mouseObj';
+      //隐藏对象Code
+    };
+
+  })
+</script>
+</html>

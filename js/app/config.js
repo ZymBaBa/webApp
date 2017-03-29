@@ -1,0 +1,24 @@
+myApp.config(function ($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise("/index");
+  $stateProvider
+    .state('index',{
+      url:'/index',
+      templateUrl:'index.html',
+      controller:'firstCtrl'
+    })
+    .state('catalog',{
+      url:'/catalog',
+      templateUrl:'catalog.html',
+      controller:'secondCtrl'
+    })
+    .state('map',{
+      url:'/map',
+      templateUrl:'html/map.html',
+      controller:'mapCtrl'
+    })
+    .state('music',{
+      url:'/music',
+      templateUrl:'html/music.html',
+      controller:'musicCtrl'
+    })
+});

@@ -1,0 +1,122 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  min-width: 1600px;
+  width: auto;
+}
+.backimg{
+  background-image: url("../../img/7.jpg");
+  background-repeat:inherit;
+  background-size:cover;
+  /*background-origin:border-box;*/
+  height: 900px;
+  z-index: -2;
+}
+.backImg1{
+  background-image: url("../../img/background2.jpg");
+  background-repeat:inherit;
+  background-size:cover;
+  /*background-origin:border-box;*/
+  height: 900px;
+  z-index: -2;
+}
+.row1{
+  margin: 0;
+}
+.bodyImg{
+  /*min-width: 1500px;*/
+  margin-top: 10px;
+}
+.bodyImg>img{
+  margin-right: -108px;
+  display: inline-block;
+  width:360px;
+  height:680px;
+}
+.col-lg-offset-1{
+  margin-left: 11.55%;
+}
+
+.introduce{
+  margin-top: 20px;
+  color: #a8edff;
+  font-size: 18px;
+}
+.textColor{
+  color: #a8edff;
+  font-size: 18px;
+}
+.moreBtn{
+  margin-top: 40px;
+}
+.alt{
+  height: 192px;
+  bottom: 0;
+  left:0;
+  position: inherit;
+  background-color: rgba(0,0,0,.85);
+  clear: both;
+  margin-right: 0;
+  margin-left: 0;
+}
+.alt>.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.footersize{
+  color: #959595;
+  font-size: 16px;
+  line-height: 30px;
+  list-style-type:none;
+  margin-top: 20px;
+}
+.one{
+  color: #e8e8e8;
+  font-size: 20px;
+  text-decoration: underline;
+  height: 100px;
+}
+.butAlt{
+  height: 72px;
+  bottom: 0;
+  left:0;
+  position: inherit;
+  background-color: #101010;
+  clear: both;
+}
+footer{
+  margin-top: -192px;
+}
+.btnsize{
+  color: #959595;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.thread{
+  width: 1315px;
+  /*margin-left: 20px;*/
+  margin-top: -25px;
+}
+
+
+
+
+.secondBody{
+  background: url("../../img/background2.jpg") repeat-y;
+  background-size: cover;
+}
+.banner{
+  margin-left: -30px;
+  background: url("../../img/banner.png") no-repeat;
+  height:172px;
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+}
+.muLu{
+  margin-top: 97px;
+  text-align: -webkit-center;
+  /*min-width: 94px;*/
+}
+.beiimg{
+  background: url("../../img/te1.png") no-repeat;
+}

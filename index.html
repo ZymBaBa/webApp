@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>睦月|代号红皇后</title>
+  <link rel="stylesheet" href="css/dist/animate.css">
+  <link href="css/dist/demo-page.css" rel="stylesheet" media="all">
+  <link href="css/dist/hover.css" rel="stylesheet" media="all">
+  <link href="css/dist/bootstrap.min.css" rel="stylesheet" media="all">
+  <link href="css/app/MuYue.css" rel="stylesheet" media="all">
+  <script type="text/javascript" src="js/controller/firstCtrl.js"></script>
+
+</head>
+<body ng-controller="firstCtrl">
+<div class="container-fluid backimg">
+  <nav class="navbar navbar-static-top">
+    <div class="row row1">
+      <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
+        <img src="img/logo.png">
+      </div>
+      <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
+        <a>简体中文</a>
+        <a>繁体中文</a>
+        <a>English</a>
+      </div>
+    </div>
+  </nav>
+  <div class="row row1">
+    <div class="row row1" >
+      <div  style="z-index:2"
+        class="col-lg-10  col-lg-offset-1  bodyImg">
+        <img class="slideInDown animated mouseObj" alt="" ng-init="ngLink2='img/9.png'" ng-src="{{ngLink2}}"
+             ng-mouseenter="mouseEnter();" ng-mouseleave="mouseLeave();">
+        <img class="slideInUp animated" src="img/11.png" alt="">
+        <img class="slideInDown animated" src="img/9.png" alt="">
+        <img class="slideInUp animated" src="img/11.png" alt="">
+        <img class="slideInDown animated" src="img/11.png" alt="">
+      </div>
+    </div>
+    <div class="row row1">
+        <div class="col-lg-10  col-lg-offset-1" style="z-index: 1;">
+          <img src="img/di.png" class="thread">
+        </div>
+    </div>
+    <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 col-lg-offset-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2">
+      <p id="text" class="textColor"></p>
+    </div>
+    <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 col-lg-offset-5 col-xs-offset-5 col-sm-offset-5 col-md-offset-5">
+      <img src="img/shouJT.png">
+    </div>
+  </div>
+</div>
+<div class="container-fluid backimg">
+  <div class="row row1">
+    <div
+      class="col-lg-6 col-xs-6 col-sm-6 col-md-6 col-lg-offset-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 moreBtn">
+      <img src="img/more0.png">
+    </div>
+  </div>
+
+</div>
+<footer class="text-center">
+  <div class="container-fluid row alt">
+    <div class="row row1">
+      <div class="col-lg-3 col-xs-3 col-sm-3 col-md-3">
+        <ul class="footersize">
+          <a class="one">关于DAISA</a>
+          <li>代号红皇后代号红皇后</li>
+          <li>代号红皇后代号红皇后</li>
+          <li>代号红皇后代号红皇后</li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+        <ul class="footersize">
+          <a class="one">关于DAISA</a>
+          <li>Emaol:jdksl@qq.com</li>
+          <li>Phone:1356225565</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-xs-3 col-sm-3 col-md-3">
+        <ul class="footersize">
+          <a class="one">加入我们</a>
+          <li>地址：浙江省嘉兴市现代广场1幢1单元</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-xs-3 col-sm-3 col-md-3">
+        <ul class="footersize">
+          <a class="one">关注我们</a><br>
+          <img src="img/xin0.png" alt="..." class="img-circle one1" vspace=18 hspace=14 ng-init="ngLink3='img/xin0.png'" ng-src="{{ngLink3}}"
+               ng-mouseenter="one11();" ng-mouseleave="two11();">
+          <img src="img/wei0.png" alt="..." class="img-circle one2" vspace=18 hspace=14 ng-init="ngLink4='img/wei0.png'" ng-src="{{ngLink4}}"
+               ng-mouseenter="one22();" ng-mouseleave="two22();">
+          <img src="img/bai0.png" alt="..." class="img-circle one3" vspace=18 hspace=14 ng-init="ngLink5='img/bai0.png'" ng-src="{{ngLink5}}"
+               ng-mouseenter="one33();" ng-mouseleave="two33();">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid row butAlt" style="margin: 0;">
+    <div class="btnsize">
+      <p >
+        © 2001-2017 Comsenz Inc. 2001-2017 Comsenz Inc. 2001-2017 Comsenz Inc.© 2001-2017 Comsenz Inc.© 2001-2017 Comsenz Inc.© 2001-2017 Comsenz Inc.
+      </p>
+      <p>
+        京ICP证050897号
+      </p>
+    </div>
+
+  </div>
+</footer>
+</body>
+<script type="text/javascript" src="js/dist/angular.js"></script>
+<script type="text/javascript" src="js/dist/angular-resource.js"></script>
+<script type="text/javascript" src="js/dist/angular-ui-router.js"></script>
+<script type="text/javascript" src="js/app/app.js"></script>
+<script type="text/javascript" src="js/app/config.js"></script>
+<script type="text/javascript" src="js/controller/firstCtrl.js"></script>
+</html>
+
+
+<!--<div class="">-->
+<!--<p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p><p>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--<h1 class="hvr-glow"><img class="img1"></h1>-->
+<!--</p>-->
+<!--</div>-->

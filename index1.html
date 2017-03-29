@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+</head>
+<body ng-controller="firstCtrl">
+<div>
+  <a class="button" ui-sref="map">map</a>
+  <a class="button" ui-sref="music">music</a>
+  <a class="button" ui-sref="class">class</a>
+</div>
+</body>
+<script type="text/ng-template" id="class.html">
+  nihao ajdfkd
+</script></s>
+<script>
+  var app = angular.module("myApp",[]);
+  app.config(function ($statProvider) {
+    $statProvider
+      .state("map",{
+        templateUrl:"html/map.html"
+      })
+      .state("music",{
+        templateUrl:"html/music.html"
+      })
+  }).controller("firstCtrl",function ($scope, $state) {
+    $state.go('music');
+  })
+</script>
+</html>
